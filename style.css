@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+  
+}
+  
+body{
+  font-family: "Monomakh", serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 1200px;
+  margin: 0 auto  !important;  
+  padding: 20px;   
+  border: black solid;
+  
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > * {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+}
+
+
+#home{
+    background-image: url(img/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;  /* Centre verticalement */
+    text-align: center; /* Centre le texte */
+    flex-direction: column;
+    color: #f0f0f0;
+    
+}
+#home h2 {
+  text-transform: uppercase;
+}
+
+
+.meinBild{
+    width: 275px;
+    height: 183px;
+}
+
+#uberMich {
+  display: flex; /* Utiliser Flexbox pour aligner l'image et le texte */
+  align-items: center; /* Centrer verticalement */
+  gap: 20px; /* Ajouter un espace entre l'image et le texte */
+  max-width: 80%; /* Limiter la largeur pour éviter un étirement excessif */
+  margin: 50px auto; /* Centrer la section */
+}
+
+#uberMich img {
+  margin-left: 60px;
+  width: 250px; /* Taille contrôlée de l'image */
+  height: auto;
+  border-radius: 10px; /* Arrondir légèrement les bords */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Ajouter une ombre légère */
+}
+
+#uberMich p {
+  font-size: 18px; /* Texte plus lisible */
+  line-height: 1.6; /* Meilleure lisibilité */
+  text-align: justify; /* Justifier le texte */
+  max-width: 600px; /* Éviter que le texte soit trop large */
+}
+
+
+.carouel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#projects > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+figure img{
+  border-radius: 10px; /* Arrondir légèrement les bords */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Ajouter une ombre légère */
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakt_Container{
+    margin: 40px 0;
+    background-color: #f8f3f0; /* Couleur de fond douce */
+}
+
+.kontakt_Head{
+  display: flex;
+  justify-content: center;  /* Centre horizontalement */
+  align-items: center;  /* Centre verticalement */
+  text-align: center; /* Centre le texte */
+  flex-direction: column;
+}
+
+
+.kontakt_Body {
+  display: flex;  /* Aligne adresse & formulaire côte à côte */
+  justify-content: space-between; /* Espace entre les deux parties */
+  
+  max-width: 900px; /* Largeur max pour éviter trop d'étirement */
+  margin: auto; /* Centre l'ensemble */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* 📍 Style de l'adresse */
+.kontakt_Body address {
+  display: flex;
+    flex-direction: column; /* Met chaque élément sur une ligne distincte */
+    gap: 40px; /* Espacement entre chaque ligne */
+    margin-right: 1rem;
+}
+  
+.kontakt_Body address a {
+  display: flex;
+  align-items: center; /* Aligner les icônes et le texte verticalement */
+  gap: 10px; /* Ajouter un espace entre l'icône et le texte */
+  text-decoration: none; /* Supprimer le soulignement des liens */
+  color: black; /* Assurer une bonne lisibilité */
+  font-size: 18px; /* Augmenter légèrement la taille du texte */
+}
+
+address i{
+  width: 30px; /* Assurer une largeur fixe aux icônes pour un alignement parfait */
+  text-align: center; /* Centrer l'icône */
+  color: #b25a5a;
+}
+
+
+
+/* 📩 Style du formulaire */
+.kontakt_Body form {
+  width: 55%;
+  background-color: #f0f0f0; /* Fond gris clair */
+  padding: 30px;
+  border-radius: 5px;
+  
+}
+
+.kontakt_Body label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #6d5653;
+}
+
+.kontakt_Body input, 
+.kontakt_Body textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d27872;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.kontakt_Body textarea {
+  height: 100px;
+  resize: none; /* Empêche de redimensionner */
+}
+
+.kontakt_Body button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  background-color: #d27872;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}  
+  
+  
+.kontakt_Body button:hover {
+  background-color: #b25a5a;
+}
+  
+.button i {
+  color: rgb(210, 120, 114); /* Mets la couleur que tu veux */
+}
+
+.netzwerk{
+  display: flex;
+  justify-content: center;  /* Centre horizontalement */
+  align-items: center;  /* Centre verticalement */
+  flex-direction: column;
+}
+
+.button{
+  display: flex;
+  gap: 30px;
+}
+
+
+hr {
+  height: 3px;
+  background-color: black;
+  margin: 20px 0;  
+}
+
+footer div:nth-child(4){
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+  grid-template-rows: auto auto; /* Deux lignes automatiques */
+  align-items: center; /* Aligner verticalement */
+  justify-content: space-between; /* Espacer les éléments */
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+footer div:nth-child(4) h1 {
+  grid-column: 1; /* Colonne de gauche */
+  text-align: left;
+}
+
+footer div:nth-child(4) p:first-of-type {
+  grid-column: 2; /* Colonne de droite */
+  text-align: right;
+  margin-right: 0px;
+}
+
+footer div:nth-child(4) p:last-of-type {
+  grid-column: 2; /* Prend toute la largeur */
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+ 
