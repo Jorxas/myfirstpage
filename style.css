@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
   
 }
   
@@ -14,32 +14,33 @@ body{
   
 }
 
+/* das Design von dem Header */
 .nav_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
 }
 
 nav > * {
-    text-decoration: none;
-    color: inherit;
-    padding: 5px;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
 }
-
 
 #home{
-    background-image: url(img/Background.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 450px;
-    display: flex;
-    justify-content: center;  /* Centre horizontalement */
-    align-items: center;  /* Centre verticalement */
-    text-align: center; /* Centre le texte */
-    flex-direction: column;
-    color: #f0f0f0;
+  background-image: url(img/Background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  justify-content: center;  /* Centre horizontalement */
+  align-items: center;  /* Centre verticalement */
+  text-align: center; /* Centre le texte */
+  flex-direction: column;
+  color: #f0f0f0;
     
 }
+
 #home h2 {
   text-transform: uppercase;
 }
@@ -50,30 +51,31 @@ nav > * {
     height: 183px;
 }
 
+/* das Design von meinen Daten */
 #uberMich {
-  display: flex; /* Utiliser Flexbox pour aligner l'image et le texte */
-  align-items: center; /* Centrer verticalement */
-  gap: 20px; /* Ajouter un espace entre l'image et le texte */
-  max-width: 80%; /* Limiter la largeur pour éviter un étirement excessif */
-  margin: 50px auto; /* Centrer la section */
+  display: flex; 
+  align-items: center; 
+  gap: 20px;
+  max-width: 80%;  
+  margin: 50px auto; 
 }
 
 #uberMich img {
   margin-left: 60px;
-  width: 250px; /* Taille contrôlée de l'image */
+  width: 250px; 
   height: auto;
-  border-radius: 10px; /* Arrondir légèrement les bords */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Ajouter une ombre légère */
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
 }
 
 #uberMich p {
-  font-size: 18px; /* Texte plus lisible */
-  line-height: 1.6; /* Meilleure lisibilité */
-  text-align: justify; /* Justifier le texte */
-  max-width: 600px; /* Éviter que le texte soit trop large */
+  font-size: 1rem;
+  line-height: 1.6; 
+  text-align: justify;
+  max-width: 600px; 
 }
 
-
+/* das Design von Project */
 .carouel{
   display: flex;
   justify-content: space-between;
@@ -88,10 +90,11 @@ nav > * {
 
 }
 figure img{
-  border-radius: 10px; /* Arrondir légèrement les bords */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Ajouter une ombre légère */
+  border-radius: 10px; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
 }
 
+/* das Design vom footer */
 footer{
   display: flex;
   flex-direction: column;
@@ -99,48 +102,46 @@ footer{
 
 .kontakt_Container{
     margin: 40px 0;
-    background-color: #f8f3f0; /* Couleur de fond douce */
+    background-color: #f8f3f0; 
 }
 
 .kontakt_Head{
   display: flex;
-  justify-content: center;  /* Centre horizontalement */
-  align-items: center;  /* Centre verticalement */
-  text-align: center; /* Centre le texte */
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
   flex-direction: column;
 }
 
 
 .kontakt_Body {
-  display: flex;  /* Aligne adresse & formulaire côte à côte */
-  justify-content: space-between; /* Espace entre les deux parties */
-  
-  max-width: 900px; /* Largeur max pour éviter trop d'étirement */
-  margin: auto; /* Centre l'ensemble */
-  padding: 40px;
+  display: flex;
+  justify-content: space-between; 
+  max-width: 900px;
+  margin: auto; 
   border-radius: 10px;
 }
 
-/* 📍 Style de l'adresse */
+/*  Style vom adresse */
 .kontakt_Body address {
   display: flex;
-    flex-direction: column; /* Met chaque élément sur une ligne distincte */
-    gap: 40px; /* Espacement entre chaque ligne */
-    margin-right: 1rem;
+  flex-direction: column; 
+  gap: 40px; 
+  margin-right: 1rem;
 }
   
 .kontakt_Body address a {
   display: flex;
-  align-items: center; /* Aligner les icônes et le texte verticalement */
-  gap: 10px; /* Ajouter un espace entre l'icône et le texte */
-  text-decoration: none; /* Supprimer le soulignement des liens */
-  color: black; /* Assurer une bonne lisibilité */
-  font-size: 18px; /* Augmenter légèrement la taille du texte */
+  align-items: center; 
+  gap: 10px; 
+  text-decoration: none; 
+  color: black; 
+  font-size: 18px; 
 }
 
 address i{
-  width: 30px; /* Assurer une largeur fixe aux icônes pour un alignement parfait */
-  text-align: center; /* Centrer l'icône */
+  width: 30px; 
+  text-align: center; 
   color: #b25a5a;
 }
 
@@ -149,7 +150,7 @@ address i{
 /* 📩 Style du formulaire */
 .kontakt_Body form {
   width: 55%;
-  background-color: #f0f0f0; /* Fond gris clair */
+  background-color: #f0f0f0; 
   padding: 30px;
   border-radius: 5px;
   
@@ -173,7 +174,7 @@ address i{
 
 .kontakt_Body textarea {
   height: 100px;
-  resize: none; /* Empêche de redimensionner */
+  resize: none; 
 }
 
 .kontakt_Body button {
@@ -196,13 +197,13 @@ address i{
 }
   
 .button i {
-  color: rgb(210, 120, 114); /* Mets la couleur que tu veux */
+  color: rgb(210, 120, 114); 
 }
 
 .netzwerk{
   display: flex;
-  justify-content: center;  /* Centre horizontalement */
-  align-items: center;  /* Centre verticalement */
+  justify-content: center;  
+  align-items: center;  
   flex-direction: column;
 }
 
@@ -220,33 +221,30 @@ hr {
 
 footer div:nth-child(4){
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
-  grid-template-rows: auto auto; /* Deux lignes automatiques */
-  align-items: center; /* Aligner verticalement */
-  justify-content: space-between; /* Espacer les éléments */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto; 
+  align-items: center; 
+  justify-content: space-between; 
   text-align: center;
   width: 100%;
   padding: 20px;
 }
 
-
-
 footer div:nth-child(4) h1 {
-  grid-column: 1; /* Colonne de gauche */
+  grid-column: 1;
   text-align: left;
 }
 
 footer div:nth-child(4) p:first-of-type {
-  grid-column: 2; /* Colonne de droite */
+  grid-column: 2; 
   text-align: right;
   margin-right: 0px;
 }
 
 footer div:nth-child(4) p:last-of-type {
-  grid-column: 2; /* Prend toute la largeur */
+  grid-column: 2; 
   text-align: right;
 }
-
 
 
 
