@@ -7,10 +7,8 @@ body{
   font-family: "Monomakh", serif;
   font-weight: 400;
   font-style: normal;
-  max-width: 100%;
-  margin: 0 auto  !important;  
-  padding: 20px;   
-  border: black solid;
+  max-width: 100%;  
+
   
 }
 
@@ -19,6 +17,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;  
+  margin-right: 40px;
 }
 
 nav > * {
@@ -246,13 +245,13 @@ footer div:nth-child(4) p:first-of-type {
   grid-column: 2; 
   text-align: right;
   margin-right: 0px;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 footer div:nth-child(4) p:last-of-type {
   grid-column: 2; 
   text-align: right;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 
