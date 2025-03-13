@@ -7,7 +7,7 @@ Initially, I intended it to be my **portfolio**, but I now plan to develop it la
 
 ## Project Details  
 - The page consists of a **single layout** with buttons that navigate between different sections.  
-- It is **not yet responsive** but will be improved in the future.  
+- It is **not yet responsive** but will be improved in the future.  (gemacht)
 - The main idea is to:  
   - **Introduce myself**  
   - Display **images** that will act as links to my future projects  
