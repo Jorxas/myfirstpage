@@ -7,7 +7,7 @@ body{
   font-family: "Monomakh", serif;
   font-weight: 400;
   font-style: normal;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto  !important;  
   padding: 20px;   
   border: black solid;
@@ -47,13 +47,14 @@ nav > * {
 
 
 .meinBild{
-    width: 275px;
-    height: 183px;
+  width: 275px;
+  height: 183px;
 }
 
 /* das Design von meinen Daten */
 #uberMich {
   display: flex; 
+  flex-direction: row;
   align-items: center; 
   gap: 20px;
   max-width: 80%;  
@@ -69,29 +70,33 @@ nav > * {
 }
 
 #uberMich p {
-  font-size: 1rem;
-  line-height: 1.6; 
-  text-align: justify;
-  max-width: 600px; 
+  font-size: 1.2rem;
+  line-height: 1.3;
 }
 
 /* das Design von Project */
+
+
+#projects figure {
+  display: grid;
+  align-items: center;
+  text-align: center;
+
+}
 .carouel{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill ,minmax(400px,1fr));
+  gap: 40px;
 }
 
-#projects > * {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
 figure img{
   border-radius: 10px; 
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+  width: 400px;
+  height: 250px; 
+  object-fit: cover; 
+  margin-inline: 40px;
+
+  align-self: center;
 }
 
 /* das Design vom footer */
@@ -128,6 +133,7 @@ footer{
   flex-direction: column; 
   gap: 40px; 
   margin-right: 1rem;
+  margin-inline: 20px;
 }
   
 .kontakt_Body address a {
@@ -137,6 +143,7 @@ footer{
   text-decoration: none; 
   color: black; 
   font-size: 18px; 
+  
 }
 
 address i{
@@ -153,7 +160,7 @@ address i{
   background-color: #f0f0f0; 
   padding: 30px;
   border-radius: 5px;
-  
+  margin: 0 20px 20px 0 ;
 }
 
 .kontakt_Body label {
@@ -239,17 +246,36 @@ footer div:nth-child(4) p:first-of-type {
   grid-column: 2; 
   text-align: right;
   margin-right: 0px;
+  padding-right: 20px;
 }
 
 footer div:nth-child(4) p:last-of-type {
   grid-column: 2; 
   text-align: right;
+  padding-right: 20px;
 }
 
 
 
 
+@media (max-width: 576px) {
+  #home  p {
+    display: flex;
+    text-align: left;
+    padding-left: 40px;
+    font-size: large;
+  }
+}
 
+@media (max-width: 768px) {
+  #uberMich  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 
 
