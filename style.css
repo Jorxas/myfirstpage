@@ -89,6 +89,8 @@ nav > * {
   flex-wrap: wrap;  /* Permet de revenir à la ligne si nécessaire */
   justify-content: space-between;  /* Répartir les éléments */
   gap: 40px;  /* Espacement entre les éléments */
+  align-items: center;
+  justify-content: center;
 }
 
 
